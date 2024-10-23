@@ -18,9 +18,11 @@ class user:
     def enroll(self):
         self.is_rewards_member = True
         self.gold_card_points = 200
+        return self
         
     def spend_points(self, amount):
         self.gold_card_points = self.gold_card_points - amount
+        return self
 
 x = user("wael", "benslimen", "waelbeslimen111@gmail.com", "21")
 y = user("jane", "doe", "janedoe@gmail.com", "21")
