@@ -44,12 +44,6 @@ class player:
         self.position = player["position"]
         self.team = player["team"]
         
-    def display(self):
-        print(self.name)
-        print(self.age)
-        print(self.position)
-        print(self.team)
-
 p1 = player(players[0])
 p2 = player(players[1])
 p3 = player(players[2])
@@ -58,4 +52,6 @@ new_team = []
 
 for i in range(len(players)):
     new_team.append(player(players[i]))
-print(new_team)
+    
+for x in new_team:
+    print(x.name)
