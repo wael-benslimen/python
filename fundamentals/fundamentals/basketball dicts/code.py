@@ -51,7 +51,8 @@ p3 = player(players[2])
 new_team = []
 
 for i in range(len(players)):
-    new_team.append(player(players[i]))
+    x = player(players[i])
+    new_team.append(x)
     
 for x in new_team:
     print(x.name)
